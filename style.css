@@ -243,7 +243,7 @@ position: relative;
 }
 
 @media(max-width: 800px) {
-	.seats, .reserved {
+	.seats {
 		height: 50px;
 	}
 	

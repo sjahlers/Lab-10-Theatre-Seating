@@ -59,7 +59,7 @@ $('.seats').on('click', function(){
 		$('#name').val('');
 		$('#seatsToBeReserved').val('');
 
-		$('.selected').removeClass('selected').removeClass('seats').addClass('reserved');
+		$('.selected').removeClass('selected').addClass('reserved');
 
 	// Hides the form	
 	$('#form').css('opacity', '0');
