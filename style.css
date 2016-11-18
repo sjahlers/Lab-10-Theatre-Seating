@@ -1,0 +1,305 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	font-family:'Share Tech';
+	background-color: rgb(45, 47, 48);
+	margin: 5%;
+}
+
+header {
+	width: 80%;
+	margin: auto;
+}
+
+#theatre_image {
+	width: 20%;
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+h1 {
+	display:inline-block;
+	text-shadow:3px 3px rgb(47, 116, 127);
+	font-size:3em;
+	text-align:center;
+    color:#FF6000;
+	top: 20px;
+    float: right;
+    width: 75%;
+}
+
+h1, h2, h3 {
+	font-family:'Sonsie One';
+}
+
+#theatre {
+	border: 1px solid white;
+	width: 100%;
+	padding: 5px;
+	clear: both;
+}
+
+#screen {
+	width: 70%;
+	height: 50px;
+	margin: 10px auto 80px auto;
+	text-align: center;
+	color: white;
+	background-color: rgb(106, 109, 109);
+	border-radius: 5px;
+}
+ 
+#screen p {
+	font-size: 1.25em;
+	padding: 12px;
+}
+
+.column, .outercolumn {
+	display: inline-block;
+	width: 12%;
+	margin: auto;
+}
+
+.outercolumn {
+top: -40px;
+position: relative;
+}
+
+#wrapper {
+	margin: auto;
+	width: 90%;
+	text-align: center;
+}
+
+.seats {
+	background-color: rgb(47, 116, 127);
+	box-shadow: 3px  3px rgb(189, 193, 201);
+	border-radius: 2px;
+	display: block;
+	width: 90%;
+	height: 100px;
+	margin: 10px auto 20px auto;
+}
+
+.seatnumber {
+	font-size:1.25em;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	margin-top: 40px;
+}
+
+
+.selected{
+	background-color: rgb(18, 220, 255);
+	box-shadow: 3px  3px rgb(189, 193, 201);
+	border-radius: 2px;
+	display: block;
+	width: 90%;
+	height: 100px;
+	margin: 10px auto 20px auto;
+}
+
+.reserved{
+	background-color: rgb(204, 78, 0);
+	box-shadow: 3px  3px rgb(189, 193, 201);
+	border-radius: 2px;
+	display: block;
+	width: 90%;
+	height: 100px;
+	margin: 10px auto 20px auto;
+}
+
+#keyformcontainer {
+	width: 80%;
+	margin: auto;
+}
+
+#instructions {
+	text-align: center;
+	color: white;
+	font-family:'Sonsie One';
+	font-size: 1.25em;
+}
+
+/* Key Styling */
+#key {
+	height:200px;
+	width:25%;
+	margin-top:20px;
+	margin-bottom:20px;
+	display:-inline-block;
+	float:left;
+	border:solid white 1px;
+}
+
+#keyhead{
+	text-align:center;
+	color:#FF6000;
+}
+
+.keycolor {
+	border-radius:2px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	height:30px;
+	width:60%;
+}
+
+.keytext {
+	width:100%;
+	padding:5px;
+	margin-top:10px;
+	text-align:center;
+	color:white;
+}
+
+#open{
+	background-color:rgb(47, 116, 127);
+}
+
+#reserved{
+	background-color:rgb(204, 78, 0); 
+}
+
+#selected{
+	background-color:rgb(18, 220, 255);
+}
+
+/* Form styling */
+
+	#form {
+		width: 50%;
+		background-color: rgb(204, 78, 0); 
+		border: 4px solid rgb(47, 116, 127);
+		border-radius: 5px;
+		margin: 20px;
+		float: right;
+		padding: 10px;
+		text-align: center;
+		font-size: 1.25em;
+		color: white;
+		opacity: 0;
+	}
+	
+	#form h3 {
+		color: white;
+	}
+	
+	input {
+		padding: 3px;
+		border-radius: 5px;
+		margin: 10px auto 0px auto;
+		vertical-align: middle;
+		display: block;
+	}
+	
+	input[type="text"] {
+		width: 80%;
+	}
+	
+	#reservebutton {
+		display: block;
+		margin: 20px auto 10px auto;
+		background-color: rgb(47, 116, 127);
+		color: white;
+		font-family: 'Sonsie One';
+		padding: 10px;
+		text-shadow: 0px 1px 1px rgb(18, 220, 255);
+		box-shadow: 2px  2px rgb(189, 193, 201);
+		width: 50%
+	}
+	
+	#reservebutton:hover {
+		background-color: rgb(64, 158, 173);
+	}
+	
+	
+/* Media Query */
+
+@media(max-width:980px) {
+	h1 {
+		font-size: 2.5em;
+	}
+}
+
+@media(max-width: 885px) {
+	#reservebutton {
+		font-size: .5em;
+	}
+}
+
+@media(max-width:812px) {
+	h1 {
+		font-size: 2em;
+	}
+}
+
+@media(max-width: 800px) {
+	.seats, .reserved {
+		height: 50px;
+	}
+	
+	.seatnumber {
+		margin-top: 12px;
+	}
+	
+	#form {
+		left: 200px;
+	}
+	
+	#reservebutton {
+		width: 100%;
+	}
+}
+
+
+@media(max-width: 635px){
+	.keytext {
+		font-size:.65em;
+	}
+	
+	#reservebutton {
+		font-size: .5em;
+		width: 100%;
+	}
+}
+@media(max-width: 655px) {
+	#theatre_image {
+		width: 35%;
+		display: block;
+		float: none;
+		margin: auto;
+	}
+
+	h1 {
+		text-shadow: 3px 3px rgb(47, 116, 127);
+		font-size: 2em;
+		text-align: center;
+		color: #FF6000;
+		float: none;
+		width: 100%; 
+	}
+}
+
+@media(max-width: 450px) {
+	#form {
+		left: 100px;
+	}
+	
+	#form h3 {
+		font-size: .80em;
+	}
+}
+
+
+	
+}
+
